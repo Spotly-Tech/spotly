@@ -1,0 +1,11 @@
+@import url(https://db.onlinewebfonts.com/c/04734a8434804174e878d228103b5313?family=FSP+DEMO+-+Roc+Grotesk+Heavy);
+
+body {
+	background-color: #eff1f3;
+	color: #242325;
+}
+
+.logo {
+	width: 10vw;
+	height: 5vh;
+}
