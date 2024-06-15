@@ -1,11 +1,22 @@
-@import url(https://db.onlinewebfonts.com/c/04734a8434804174e878d228103b5313?family=FSP+DEMO+-+Roc+Grotesk+Heavy);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
 
-body {
-	background-color: #eff1f3;
-	color: #242325;
+:root {
+	--bg-color: #F9F6EF;
+	--font-color: #282828;
 }
 
-.logo {
-	width: 10vw;
-	height: 5vh;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body, * {
+	cursor: none;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: var(--font-color);
 }
