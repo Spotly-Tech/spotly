@@ -1,0 +1,71 @@
+:root {
+    --radial-gradient-background: 250, 250, 250;
+    --solid-color-background: 40, 40, 40;
+    --overlay-color: 255, 255, 255;
+    --linear-overlay: #282828, #282828;
+}
+
+.btn {
+    position: relative;
+    padding: 1rem 2rem; /* 16px 32px*/
+    border-radius: 0.625rem;
+    border: 0px solid #282828;
+    outline: none;
+    font-family: 'Wanted Sans Variable', sans-serif;
+    font-size: 1.5rem;
+}
+.radial_gradient {
+    background: radial-gradient(
+            circle at 50% 0%,
+            rgba(var(--radial-gradient-background), 0.05) 0%,
+            transparent 60%
+        )
+        rgba(var(--solid-color-background), 1);
+}
+
+.btn_text {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #fffcf5;
+    position: relative;
+    letter-spacing: 0.025rem;
+}
+.linear_mask {
+    mask-image: linear-gradient(
+        -75deg,
+        white calc(var(--x) + 20%),
+        transparent calc(var(--x) + 30%),
+        white calc(var(--x) + 100%)
+    );
+    -webkit-mask-image: linear-gradient(
+        -75deg,
+        white calc(var(--x) + 20%),
+        transparent calc(var(--x) + 30%),
+        white calc(var(--x) + 100%)
+    );
+}
+
+.overlay {
+    display: block;
+    position: absolute;
+    inset: 0;
+    border-radius: 0.625rem;
+    padding: 1.2px;
+}
+.linear_overlay {
+    background-image: linear-gradient(
+        -75deg,
+        rgba(var(--solid-color-background), 1) calc(var(--x) + 20%),
+        rgba(var(--overlay-color), 0.8) calc(var(--x) + 25%),
+        rgba(var(--solid-color-background), 1) calc(var(--x) + 100%)
+    );
+    mask:
+        linear-gradient(var(--linear-overlay)) content-box,
+        linear-gradient(var(--linear-overlay));
+    -webkit-mask:
+        linear-gradient(var(--linear-overlay)) content-box,
+        linear-gradient(var(--linear-overlay));
+    mask-composite: exclude;
+    -webkit-mask-composite: xor;
+}
