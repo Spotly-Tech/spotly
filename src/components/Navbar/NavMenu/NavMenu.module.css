@@ -1,0 +1,13 @@
+.nav {
+    overflow: hidden;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

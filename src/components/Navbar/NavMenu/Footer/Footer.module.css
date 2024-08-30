@@ -1,0 +1,19 @@
+.container {
+    width: 25%;
+    height: 50px;
+}
+.wrapper {
+    height: 100%;
+    height: inherit;
+}
+.socials {
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.rights {
+    display: inline-block;
+    color: #282828;
+}
