@@ -18,11 +18,13 @@
         "@types/node": "^20.14.11",
         "antd": "^5.19.1",
         "axios": "^1.7.2",
+        "formik": "^2.4.6",
         "framer-motion": "^11.2.10",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.24.1",
-        "styled-components": "^6.1.12"
+        "styled-components": "^6.1.12",
+        "yup": "^1.4.0"
     },
     "devDependencies": {
         "@eslint/compat": "^1.1.1",
