@@ -11,8 +11,6 @@ import styles from './Footer.module.css'
 
 const Footer = () => {
     const [selectedLink, setSelectedLink] = useState({ isHovered: false, index: 0 })
-    const d = new Date()
-    let year = d.getFullYear()
     return (
         <div className={styles.container}>
             <div className={styles.wrapper}>
@@ -39,14 +37,13 @@ const Footer = () => {
                                 >
                                     <FontAwesomeIcon
                                         icon={icon}
-                                        style={{ fontSize: '1.5rem', color: '#282828' }}
+                                        style={{ fontSize: '1.5rem', color: '#fffcf5' }}
                                     />
                                 </motion.i>
                             </a>
                         )
                     })}
                 </div>
-                <p className={styles.rights}>© {year} Spotly, All rights reserved</p>
             </div>
         </div>
     )
