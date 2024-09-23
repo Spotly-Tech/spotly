@@ -7,7 +7,10 @@
             "@/components/ui/*": ["components/ui/*"],
             "@/layouts/*": ["layouts/*"],
             "@/pages/*": ["pages/*"],
-            "@/utils/*": ["utils/*"]
+            "@/utils/*": ["utils/*"],
+            "@/context/*": ["context/*"],
+            "@/hooks/*": ["hooks/*"],
+            "@/schemas/*": ["schemas/*"]
         },
         "target": "ES2020",
         "useDefineForClassFields": true,
