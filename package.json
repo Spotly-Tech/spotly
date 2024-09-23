@@ -21,6 +21,7 @@
         "formik": "^2.4.6",
         "framer-motion": "^11.2.10",
         "react": "^18.2.0",
+        "react-chrome-dino": "^0.1.3",
         "react-dom": "^18.2.0",
         "react-router-dom": "^6.24.1",
         "styled-components": "^6.1.12",
