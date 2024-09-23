@@ -1,7 +1,7 @@
 :root {
     --nav-font-size: 1.5rem;
-    --nav-font-weight: 800;
-    --nav-font-family: 'Wanted Sans Variable', sans-serif;
+    --nav-font-weight: 600;
+    --nav-font-family: 'Rubik', sans-serif;
     --nav-line-height: 10vh;
     --nav-cursor: none;
 }
@@ -25,19 +25,12 @@
 .logo {
     position: relative;
     z-index: 0;
-    font-family: 'Spicy Rice', serif;
-    font-weight: 400;
-    font-size: 4rem;
+    font-family: var(--nav-font-family);
+    font-weight: 800;
+    font-size: 3.5rem;
     text-align: center;
 
     line-height: var(--nav-line-height);
-}
-.logo_img {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    width: 256px;
-    height: 64px;
 }
 
 /*! MENU & PROFILE */
@@ -49,10 +42,17 @@
     gap: 8px;
 }
 .menu:hover {
-    color: #ffffff;
+    color: #161316
+}
+.profile:hover {
+    color: #161316
+
 }
 .profile {
-    text-align: end;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-align: start;
 }
 .menu,
 .profile {
@@ -64,9 +64,13 @@
 
 /*! NAV ITEM */
 .nav_item {
+    color: #fffcf5;
     cursor: var(--nav-cursor);
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+.label:hover {
+    color: #161316;
 }
 
 /*! STICKY ITEM BOUNDS*/
@@ -93,7 +97,7 @@
     content: '';
     height: 1px;
     width: 100%;
-    background-color: #111;
+    background-color: #fffcf5;
     position: relative;
     display: block;
     transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
