@@ -3,15 +3,15 @@
     --solid-color-background: 40, 40, 40;
     --overlay-color: 255, 255, 255;
     --linear-overlay: #282828, #282828;
+    --nav-font-family: 'Rubik', sans-serif;
 }
-
 .btn {
     position: relative;
     padding: 1rem 2rem; /* 16px 32px*/
     border-radius: 0.625rem;
     border: 0px solid #282828;
     outline: none;
-    font-family: 'Wanted Sans Variable', sans-serif;
+    font-family: var(--nav-font-family);
     font-size: 1.5rem;
 }
 .radial_gradient {

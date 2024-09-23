@@ -4,11 +4,11 @@ import { motion } from 'framer-motion'
 
 import styles from './ShinyButton.module.css'
 
-interface ShinyButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+interface IShinyButton extends ButtonHTMLAttributes<HTMLButtonElement> {
     children: ReactNode
 }
 
-function ShinyButton({ children, ...props }: ShinyButtonProps) {
+function ShinyButton({ children, ...props }: IShinyButton) {
     return (
         <motion.button
             {...props}
