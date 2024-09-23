@@ -11,7 +11,7 @@ interface ICustomCursorProps {
 const CustomCursor: FC<ICustomCursorProps> = ({ stickyElement }) => {
     const [isHovered, setIsHovered] = useState(false)
 
-    const cursorSize = isHovered ? 90 : 40
+    const cursorSize = isHovered ? 95 : 45
 
     const mouse = {
         x: useMotionValue(0),
@@ -71,7 +71,7 @@ const CustomCursor: FC<ICustomCursorProps> = ({ stickyElement }) => {
             style={{
                 left: smoothMouse.x,
                 top: smoothMouse.y,
-                backgroundColor: isHovered ? 'black' : 'transparent',
+                backgroundColor: isHovered ? '#FFFCF5' : 'transparent',
             }}
             animate={{ width: cursorSize, height: cursorSize }}
         ></motion.div>
